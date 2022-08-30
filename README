@@ -1,0 +1,9 @@
+1. To run the new GSAT and WalkSAT algorithms, right click on SAT.py and press run. This should create a new cnf file that
+can be run within Sudoku.py.
+2. Go into Sudoku.py, and at the bottom replace the existing file with your new solution file from SAT.py. Run the program
+
+-For SAT.py to run correctly, you must first create an SAT object that takes the cnf.file you want to work in. Creating a list
+of variables with sat.creat_cnf_list and setting it equal to a variable will give a the parsed cnf.file. This variable can be
+used as a parameter in sat.GSAT or sat.WalkSAT. GSAT takes that list, a max-tries number, and max_flips. WalkSAT takes those
+three paramters, as well as one more that is the probability value between 0 and 1. I have set it to 0.3, as per my professor's
+suggesion.
